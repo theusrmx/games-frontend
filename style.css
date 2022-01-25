@@ -10,7 +10,6 @@
 }
 
 
-
 section{
     position: relative;
     width: 100%;
@@ -36,24 +35,6 @@ header{
 header .logo{
     position: relative;
     max-width: 100px;
-}
-
-header ul{
-    position: relative;
-    display: flex;
-
-}
-
-header ul li{
-    list-style: none;
-}
-
-header ul a li{
-    display: inline-block;
-    color: #333;
-    font-weight: 400;
-    margin-left: 40px;
-    text-decoration: none;
 }
 
 .content{
@@ -408,4 +389,60 @@ footer{
     background-color: rgb(44, 44, 44);
 }
 
+
+@media(max-width:991px){
+    header{
+        padding:20px 20px 120px;
+    }
+    header .logo{
+        max-width: 100px;
+    }
+    
+
+    section{
+        padding: 20px;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .textBox h2{
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .content .textBox{
+        max-width: 100%;
+    }
+
+    .content .imgBox{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .content .imgBox img{
+        max-width: 500px;
+    }
+
+    .thumb li img{
+        max-width: 40px;
+    }
+
+    .sci{
+       background-color: #c20e0e; 
+       border-bottom-left-radius: 5px;
+       border-top-left-radius: 5px;
+       right: 0;
+       width: 50px;
+
+    }
+
+    .circle_main{
+        clip-path: circle(400px at center bottom);
+    }
+
+    
+
+}
 

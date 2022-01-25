@@ -12,11 +12,13 @@ function changeColor(color){
     const btn = document.querySelector('.btn');
     const icon = document.getElementById('icon');
     const btn2 = document.querySelector('.btn_sobre');
+    const sci = document.querySelector('.sci');
     circle.style.background = color;
     text.style.color = color;
     btn.style.background = color;
     icon.style.color = color;
     btn2.style.background = color;
+    sci.style.background = color;
 }
 
 
@@ -69,5 +71,3 @@ function textChange(game){
     }
     
 }
-
-
