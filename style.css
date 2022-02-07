@@ -37,7 +37,7 @@ header .logo{
     max-width: 100px;
 }
 
-.content{
+.content-main{
     position: relative;
     width: 100%;
     display: flex;
@@ -45,25 +45,25 @@ header .logo{
     align-items: center;
 }
 
-.content .textBox{
+.content-main .textBox{
     position: relative;
     max-width: 600px;
 }
 
-.content .textBox h2{
+.content-main .textBox h2{
     color: #333;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
 
-.content .textBox h2 span{
+.content-main .textBox h2 span{
     color: #c20e0e;
     font-size: 1.2em;
     font-weight: 900;
 }
 
-.btn{
+.btn_sobre{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
@@ -77,7 +77,7 @@ header .logo{
 }
 
 
-.content .imgBox{
+.content-main .imgBox{
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
@@ -86,7 +86,7 @@ header .logo{
     width: 650px;
 }
 
-.content .imgBox img{
+.content-main .imgBox img{
     max-height: 100%;
     max-width: 100%;
 }
@@ -208,9 +208,10 @@ div.overlay{
     padding: 10px;
     max-width: fit-content;
     max-height: fit-content;
+    border-radius: 20px;
 }
 
-.btn_sobre{
+.btn_inscricao{
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -225,11 +226,26 @@ div.overlay{
     text-align: center;
 }
 
-.conteudo h1{
+.textBoxEFT{
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.conteudo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo h2{
     text-align: center;
     font-size: 24px;
     padding: 10px;
-    margin-top: 10px ;
+    margin-top: 10px;
 }
 
 .eft{
@@ -246,7 +262,7 @@ div.overlay{
 
 /*cards*/
 
-.container{
+.cards-div{
   position: relative;
   justify-content: space-between;
   display: flex;
@@ -254,18 +270,18 @@ div.overlay{
   
 }
 
-.container .card{
+.cards-div .card{
   position: relative;
   cursor: pointer;
 }
 
-.container .card .face{
+.cards-div .card .face{
   width: 300px;
   height: 200px;
   transition: 0.5s;
 }
 
-.container .card .face.face1{
+.cards-div .card .face.face1{
   position: relative;
   background: #333;
   display: flex;
@@ -275,26 +291,29 @@ div.overlay{
   transform: translateY(100px);
 }
 
-.container .card:hover .face.face1{
+.cards-div .card:hover .face.face1{
   background: rgb(15, 133, 0);
   transform: translateY(0);
 }
 
-.container .card .face.face1 .content{
+.cards-div .card .face.face1 .content{
   opacity: 0.2;
   transition: 0.5s;
   padding: 10px;
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container .card:hover .face.face1 .content{
+.cards-div .card:hover .face.face1 .content{
   opacity: 1;
 }
 
-.container .card .face.face1 .content img{
+.cards-div .card .face.face1 .content img{
   max-width: 100px;
 }
 
-.container .card .face.face1 .content h3{
+.cards-div .card .face.face1 .content h3{
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -302,7 +321,7 @@ div.overlay{
   font-size: 1.5em;
 }
 
-.container .card .face.face2{
+.cards-div .card .face.face2{
   position: relative;
   background: #fff;
   display: flex;
@@ -310,20 +329,19 @@ div.overlay{
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
 }
 
-.container .card:hover .face.face2{
+.cards-div .card:hover .face.face2{
   transform: translateY(0);
 }
 
-.container .card .face.face2 .content p{
+.cards-div .card .face.face2 .content p{
   margin: 0;
   padding: 0;
 }
 
-.container .card .face.face2 .content a{
+.cards-div .card .face.face2 .content a{
   margin: 15px 0 0;
   display:  inline-block;
   text-decoration: none;
@@ -333,7 +351,7 @@ div.overlay{
   border: 1px solid #333;
 }
 
-.container .card .face.face2 .content a:hover{
+.cards-div .card .face.face2 .content a:hover{
   background: #333;
   color: #fff;
 }
@@ -376,7 +394,10 @@ footer{
     color: white;
     text-align: center;
     background-color: rgb(44, 44, 44);
+    font-size: 12px;
 }
+
+
 
 
 @media(max-width:991px){
@@ -386,36 +407,46 @@ footer{
     header .logo{
         max-width: 100px;
     }
-    
 
     section{
-        padding: 20px;
+        padding: 20px 20px 0 20px ; 
     }
-    .content{
+    .content-main{
         flex-direction: column;
         margin-top: 100px;
     }
 
-    .content .textBox h2{
+    .content-main .textBox h2{
         font-size: 2.5em;
         margin-bottom: 15px;
     }
 
-    .content .textBox{
+    .content-main .textBox{
         max-width: 100%;
     }
 
-    .content .imgBox{
+    .content-main .imgBox{
         max-width: 100%;
         justify-content: center;
     }
 
-    .content .imgBox img{
+    .content-main .imgBox img{
         max-width: 450px;
+        max-height: 75%;
+    }
+
+
+    .thumb{
+    left: 46%;
     }
 
     .thumb li img{
-        max-width: 30px;
+        max-width: 25px;
+    }
+
+    
+    .thumb li {
+        margin: 0 14px;
     }
 
     .sci{
@@ -424,6 +455,7 @@ footer{
        border-top-left-radius: 5px;
        right: 0;
        width: 50px;
+       padding-right: 20px;
 
     }
 
@@ -431,10 +463,6 @@ footer{
         clip-path: circle(400px at center bottom);
     }
 
-    #sobre_games{
-        background-image: url('imagens/apex_banner_mobile.jpg');
-        
-    }
 
     .logos_games{
     width: 150px;
@@ -444,19 +472,53 @@ footer{
     margin-right: auto;
     }
 
-    .content-descricao{
-        background-color: rgba(255, 255, 255, 0.699);
-        padding: 10px;
-        border-radius: 20px;
-        margin: 50px;
+    .content-descricao {
+        max-width: 100%;
         width: 80%;
-
-    }
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+}
 
     .text-descricao {
         font-size: 14px;
         font-weight: bold;
     }
 
+    .video_yt{
+        height: 140px;
+        width: 266px;
+    }
+
+    .textBoxEFT{
+        max-width: 100%;
+    }
+    .eft, .conteudo h2 {
+        font-size: 20px;
+    }
+
+    .eft_text {
+        font-size: 14px;
+    }
+
+    /*reponsividade cards*/
+    .cards-div {
+        flex-direction: column;
+    }
+
+    .cards-div .card .face.face1 .content h3 {
+        font-size: 16px;
+    }
+    
+    .cards-div .card .face.face2 .content p {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    #contato{
+        background-position: center;
+    }
 }
+
 

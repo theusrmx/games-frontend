@@ -18,11 +18,11 @@
         <a href=""><img class="logo" src="imagens/logo_site.png" alt="Logo EFT"></a>
         
         </header>
-        <div class="content">
+        <div class="content-main">
             <div class="textBox">
                 <h2>It's not just a game<br>It's<span class="enfase"> e-sports</span></h2>
                 <p>Um novo jeito de jogar. Seja competindo ou torcendo, se divirta com seus jogos favoritos!</p>
-                 <a href="" class="btn">Veja mais</a>
+                 <a href="" class="btn_sobre">Veja mais</a>
                 </div>
 
             <div class="imgBox">
@@ -35,7 +35,7 @@
         <ul class="thumb">
             
             <li><img class="logo" src="imagens/apexlogo.png" alt="Apex Legends" 
-                onclick="imgSlider('imagens/legends.png', 'url(imagens/apex_banner.jpg)', 'imagens/apex_title.svg', 'https://www.youtube.com/embed/N-7j2ejytyI', 'url(imagens/apex_contato.jpg)');changeColor('#c20e0e');textChange('apex')"></li>
+                onclick="imgSlider('imagens/legends.png', 'url(imagens/apex_banner.jpg)', 'imagens/apex_title.svg', 'https://www.youtube.com/embed/OtVABKfc_AE', 'url(imagens/apex_contato.jpg)');changeColor('#c20e0e');textChange('apex')"></li>
 
             <li><img class="logo" src="imagens/valorantlogo.png" alt="Valorant" 
                 onclick="imgSlider('imagens/agents.png', 'url(imagens/valorant_banner.jpg)', 'imagens/valorant_title.svg', 'https://www.youtube.com/embed/TtGW3ZrFm08', 'url(imagens/valorant_contato.png)');changeColor('#03a1bd');textChange('valorant')"></li>
@@ -63,7 +63,6 @@
     <section id="sobre_games">
 
         <div class="overlay">
-            <div class="container-lg-fluid">
                 <img class="logos_games img-fluid" src="imagens/apex_title.svg">
                 <div class="content-descricao">
                     <p id="texto_descricao" class="text-descricao text-center">
@@ -74,31 +73,29 @@
                         cidade no céu, e lute pela sua sobrevivência contra outros 60 jogadores.
                        
                     </p>
-                    <iframe class="video_yt" width="400" height="200" src="https://www.youtube.com/embed/N-7j2ejytyI"
+                    <iframe class="video_yt" src="https://www.youtube.com/embed/OtVABKfc_AE"
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
                     picture-in-picture" allowfullscreen>
                    </iframe>
 
-                   <a href="" class="btn_sobre">Se inscreva</a>
+                   <a href="" class="btn_inscricao">Se inscreva</a>
                 </div>
-                    
-                
-               
-               
-            </div>
         </div>
     </section>
 
 
     <section class="sobre_empresa">
         <div class="conteudo">
-                <h1><span class="eft">ENERGY FIRE TEAM:</span> sua porta de entrada no mundo competitivo</h1>
-                <h2 class="eft_text">
+            <div class="textBoxEFT">
+                <h2><span class="eft">ENERGY FIRE TEAM:</span> SUA PORTA DE ENTRADA PARA O MUNDO COMPETITIVO</h2>
+                <h1 class="eft_text">
                     Você e seus amigos amam jogar videogames, certo? E com certeza vocês também com certeza conhecem vários atletas que ganham
                     a vida jogando aquilo que amam! Que tal experimentar o mesmo?
-                </h2>
+                </h1>
+            </div>
+                
 
-                <div class="container">
+                <div class="cards-div">
                     <div class="card">
                         <div class="face face1">
                             <div class="content">
@@ -176,12 +173,12 @@
     </section>
 
     <footer>
-        <h3>Developed by Matheus Ramos Marcolino</h3>
+        Developed by Matheus Ramos Marcolino
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
-
+    <script src="script.js"></script>
 
 
 </html>

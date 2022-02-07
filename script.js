@@ -9,8 +9,8 @@
 function changeColor(color){
     const circle = document.querySelector('.circle_main');
     const text = document.querySelector('.enfase');
-    const btn = document.querySelector('.btn');
-    const btn2 = document.querySelector('.btn_sobre');
+    const btn = document.querySelector('.btn_sobre');
+    const btn2 = document.querySelector('.btn_inscricao');
     const sci = document.querySelector('.sci');
     circle.style.background = color;
     text.style.color = color;
