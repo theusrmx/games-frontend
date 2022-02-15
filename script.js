@@ -39,7 +39,7 @@ function textChange(game){
 
     }else if(game == 'lol'){
         texto.innerHTML = 
-            "Junte um time de magos, assassinos, lutadores e atiradores neste clássico MMO da Riot Games." +
+            "Junte um time de magos, assassinos, lutadores e atiradores neste clássico MOBA da Riot Games." +
             "\nLute contra o time adversário no lendário Summoner's Rift, abrindo caminhos entre as torres e a Selva até a base inimiga para destruir o poderoso Nexus.";
         
     
